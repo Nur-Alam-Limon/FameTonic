@@ -1,20 +1,26 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="container mx-auto w-full pt-8 flex items-center justify-between shadow-sm">
+    <nav
+      className="container mx-auto w-full flex items-start justify-between"
+      style={{ paddingTop: "35px" }}
+    >
       {/* Left: Logo */}
-      <div className="flex items-center">
-        <Image src="/logo.png" alt="Fametonic Logo" width={150} height={40} />
+      <div className="flex items-right">
+        <Image src="/logo.png" alt="Fametonic Logo" width={170} height={72} />
       </div>
 
       {/* Right: Navigation Links */}
-      <div className="flex space-x-6 text-black font-bold text-white" style={{ fontFamily: "'Figtree', sans-serif" }}>
-        <Link href="/about-us" className="hover:text-primary transition-colors">
+      <div
+        className="font-sans"
+        style={{ color: "#A9A9A9", fontWeight: "600", fontSize: "18px" }}
+      >
+        <Link href="/about-us" style={{ paddingRight: "40px" }}>
           About Us
         </Link>
-        <Link href="/contact" className="hover:text-primary transition-colors">
+        <Link href="/contact" className="">
           Contact
         </Link>
       </div>

@@ -3,14 +3,24 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto relative flex flex-col-reverse md:flex-row items-center justify-between py-8">
-      <div className="max-w-xl">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 font-heading">
+    <section className="container mx-auto relative flex flex-col-reverse md:flex-row items-center justify-between">
+      <div style={{ paddingTop: "57px", width: "516px" }}>
+        <h1
+          className="font-heading"
+          style={{
+            fontWeight: 700,
+            fontSize: "35px",
+            lineHeight: "100%",
+            letterSpacing: "0%",
+            verticalAlign: "middle",
+            color: "#FFFFFF",
+          }}
+        >
           Want to Turn Social Media Into a Profitable Career?
         </h1>
         <p
+        className="font-heading mt-[10px]"
           style={{
-            fontFamily: "'Urbanist', sans-serif",
             fontWeight: 700,
             fontSize: "35px",
             lineHeight: "100%",
@@ -23,7 +33,7 @@ const Hero = () => {
           Discover your way to success with Fametonic:
         </p>
 
-        <ul className="mt-6 space-y-3 text-base text-gray-200">
+        <ul className="flex flex-col gap-y-[13px] mt-[16px] font-semibold text-base leading-[22px] tracking-normal align-middle">
           <li>
             ✨ Start growing your influence right away — no waiting required!
           </li>
@@ -37,25 +47,27 @@ const Hero = () => {
           </li>
         </ul>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-[313px]">
           <Button />
-          <p className="text-xs text-gray-500 mt-4 text-center">
+          <p className="font-normal text-[12px] mt-[10px] leading-[16px] tracking-normal text-center align-middle">
             1-minute quiz for personalized insights
           </p>
         </div>
-        <p className="text-sm text-gray-400 mt-4">
-          By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
+        <p className="mt-[30px] font-medium text-[#ABABAB] text-[12px] leading-[12px] tracking-normal align-middle">
+          By clicking "Get Started", you agree with Terms and Conditions,
+          Privacy Policy, Subscription Terms
         </p>
-        <p className="text-sm text-gray-400 mt-4">Fametonic 2025 ©All Rights Reserved.</p>
+        <p className="mt-[12px] font-medium text-[#ABABAB] text-[10px] leading-[12px] tracking-normal align-middle">
+          Fametonic 2025 ©All Rights Reserved.
+        </p>
       </div>
 
-      <div className="mt-12 md:mt-0 md:ml-12 relative">
+      <div className="relative">
         <Image
           src="/mockup-phone.png"
           alt="Mobile mockup"
           width={666}
           height={679}
-          className="drop-shadow-2xl"
         />
       </div>
     </section>

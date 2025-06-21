@@ -1,7 +1,16 @@
 const Header = () => (
-  <header className="bg-gradient-to-r from-pink-500 to-sky-400 text-sm text-white text-center py-2 font-medium">
-    🚀 FRESH BEGINNINGS SALE: Extra 25% OFF, Limited Spots - start your journey today!
+  <header
+    className="text-white text-center"
+    style={{
+      background: "linear-gradient(90deg, #FC004E 0%, #10CBE0 100%)",
+      fontSize: "22px",
+      fontWeight: "800",
+      padding: "10px"
+    }}
+  >
+    🚀 <span style={{ color: "#00E7F9" }}>FRESH BEGINNINGS SALE:</span> Extra 25% OFF, Limited Spots - start your journey
+    today!
   </header>
-)
+);  
 
 export default Header;

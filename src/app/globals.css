@@ -26,3 +26,15 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
+
+.container {
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}

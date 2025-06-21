@@ -1,12 +1,9 @@
+import Image from "next/image";
+
 const Button = () => (
-  <button
-    className="text-white px-16 py-3 rounded-full mt-6 text-lg font-semibold"
-    style={{
-      backgroundColor: "#FC004E",
-      boxShadow: "2px 2px 10px 0px #00E7F9"
-    }}
-  >
-    GET STARTED &gt;
+  <button className="h-[40px] py-2 rounded-[10px] gap-[10px] flex items-center justify-center mt-[30px] bg-[#FC004E] shadow-[2px_2px_10px_0px_#00E7F9] font-bold text-[20px] leading-[100%] tracking-normal align-middle">
+    GET STARTED{" "}
+    <Image src="/rightArrow.svg" alt="Right Arrow" width={11} height={6} />
   </button>
 );
 
