@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ededed;
   --font-sans: var(--font-figtree);
   --font-heading: var(--font-urbanist);
 }
@@ -12,13 +12,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-figtree);
   --font-heading: var(--font-urbanist);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
 }
 
 body {
